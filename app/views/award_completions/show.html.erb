@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @award_completion.date %>
+</p>
+
+<p>
+  <b>No help:</b>
+  <%= @award_completion.no_help %>
+</p>
+
+
+<%= link_to 'Edit', edit_award_completion_path(@award_completion) %> |
+<%= link_to 'Back', award_completions_path %>

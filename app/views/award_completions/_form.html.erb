@@ -1,0 +1,15 @@
+<%= simple_form_for(@award_completion) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :clubbers, :collection => Clubber.all, :label_method => :first_name, :prompt => "Clubber" %>
+    <%= f.association :awards, :collection => Award.all, :label_method => :description, :prompt => "Award" %>
+    <%= f.input :date, :default => Date.today %>
+    <%= f.association :leaders, :collection => Leader.all, :label_method => :first_name, :prompt => "Leader" %>
+    <%= f.input :no_help, :label => false, :inline_label => "No Helps", :as => :boolean %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

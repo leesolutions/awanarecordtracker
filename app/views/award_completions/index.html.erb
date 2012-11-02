@@ -1,0 +1,29 @@
+<h1>Listing award_completions</h1>
+
+<table>
+  <tr>
+    <th>Clubber</th>
+    <th>Award</th>
+    <th>Date</th>
+    <th>Leader</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @award_completions.each do |award_completion| %>
+  <tr>
+    <td><%= award_completion.clubbers.first_name %></td>
+    <td><%= award_completion.awards.description %></td>
+    <td><%= award_completion.date %></td>
+    <td><%= award_completion.leaders.first_name %></td>
+    <td><%= link_to 'Show', award_completion %></td>
+    <td><%= link_to 'Edit', edit_award_completion_path(award_completion) %></td>
+    <td><%= link_to 'Destroy', award_completion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Award completion', new_award_completion_path %>

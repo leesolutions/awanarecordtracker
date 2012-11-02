@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First name:</b>
+  <%= @clubber.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @clubber.last_name %>
+</p>
+
+<p>
+  <b>Parents:</b>
+  <%= @clubber.parents %>
+</p>
+
+<p>
+  <b>Birth date:</b>
+  <%= @clubber.birth_date %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @clubber.address %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @clubber.city %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%= @clubber.zip %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @clubber.phone %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @clubber.email %>
+</p>
+
+<p>
+  <b>Rank:</b>
+  <%= @clubber.rank.title if @clubber.rank %>
+</p>
+
+<%= link_to 'Edit', edit_clubber_path(@clubber) %> |
+<%= link_to 'Back', clubbers_path %>
