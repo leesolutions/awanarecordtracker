@@ -13,10 +13,10 @@
 
 <% @award_completions.each do |award_completion| %>
   <tr>
-    <td><%= award_completion.clubbers.first_name %></td>
+    <td><%= award_completion.clubbers.fname %></td>
     <td><%= award_completion.awards.description %></td>
     <td><%= award_completion.date %></td>
-    <td><%= award_completion.leaders.first_name %></td>
+    <td><%= award_completion.leaders.fname %></td>
     <td><%= link_to 'Show', award_completion %></td>
     <td><%= link_to 'Edit', edit_award_completion_path(award_completion) %></td>
     <td><%= link_to 'Destroy', award_completion, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -1,4 +1,6 @@
 Awanarecordtracker::Application.routes.draw do
+  resources :announcements
+
   get "base/home"
 
   get "base/user_guide"

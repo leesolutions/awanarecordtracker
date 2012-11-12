@@ -12,7 +12,7 @@
 <% @awards.each do |award| %>
   <tr>
     <td><%= award.description %></td>
-    <td><%= award.rank %></td>
+    <td><%= award.rank.title %></td>
     <td><%= link_to 'Show', award %></td>
     <td><%= link_to 'Edit', edit_award_path(award) %></td>
     <td><%= link_to 'Destroy', award, method: :delete, data: { confirm: 'Are you sure?' } %></td>

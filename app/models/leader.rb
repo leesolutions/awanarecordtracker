@@ -1,7 +1,9 @@
-class Leader
+class Leader < Person
   include Mongoid::Document
-  field :first_name, type: String
-  field :last_name, type: String
-  field :phone, type: String
-  field :email, type: String
+  
+  def cool?
+    if fname == "Laney"
+      puts "Way cool!"
+    end
+  end
 end

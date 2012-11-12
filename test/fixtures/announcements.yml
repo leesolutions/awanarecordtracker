@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  content: MyText
+  expiration: 2012-11-09
+
+two:
+  title: MyString
+  content: MyText
+  expiration: 2012-11-09

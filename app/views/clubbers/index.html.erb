@@ -3,8 +3,7 @@
 <table>
   <tr>
     <th>First name</th>
-    <th>Last name</th>>
-    <th>Email</th>
+    <th>Last name</th>
     <th>Rank</th>
     <th></th>
     <th></th>
@@ -13,10 +12,9 @@
 
 <% @clubbers.each do |clubber| %>
   <tr>
-    <td><%= clubber.first_name %></td>
-    <td><%= clubber.last_name %></td>
-    <td><%= clubber.email %></td>
-    <th><%= clubber.rank.title %></th>
+    <td><%= clubber.fname %></td>
+    <td><%= clubber.lname %></td> 
+    <td><%= clubber.rank.title %></td>
     <td><%= link_to 'Show', clubber %></td>
     <td><%= link_to 'Edit', edit_clubber_path(clubber) %></td>
     <td><%= link_to 'Destroy', clubber, method: :delete, data: { confirm: 'Are you sure?' } %></td>
