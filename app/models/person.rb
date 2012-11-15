@@ -1,5 +1,6 @@
 class Person
   include Mongoid::Document
+
   field :fname, type: String
   field :lname, type: String
   field :birthdate, type: Date
