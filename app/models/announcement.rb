@@ -8,7 +8,7 @@ class Announcement
 
   def archived?
     if self.online
-      then puts "Yeah"
+      puts "Yeah"
     else
       puts "Not yet"
     end
