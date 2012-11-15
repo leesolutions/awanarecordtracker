@@ -2,8 +2,6 @@ class Leader < Person
   include Mongoid::Document
   
   def cool?
-    if fname == "Laney"
-      puts "Way cool!"
-    end
+    puts "Way cool!" if fname == "Laney"
   end
 end
