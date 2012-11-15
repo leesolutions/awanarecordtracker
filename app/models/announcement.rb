@@ -6,6 +6,8 @@ class Announcement
   field :expiration, type: Date
   field :online, type: Boolean
 
+  scope :current, where(:expiration.lt => Date.today)
+
   def archived?
     if self.online
       puts "Yeah"
